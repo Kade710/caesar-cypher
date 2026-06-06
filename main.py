@@ -1,4 +1,4 @@
-from caesar import caesar_encrypt, caesar_decrypt
+from caesar import caesar_encrypt, caesar_decrypt, caesar_bruteforce
 from rot13 import rot13
 
 def main():
@@ -24,7 +24,8 @@ def main():
 
         elif choice == "3":
             text = input("Cyphertext: ")
-            results = brute_force(text, shift)
+
+            results = brute_force(cipher)
 
             for shift, text in results:
                 print(f"{shift}: {text}")
