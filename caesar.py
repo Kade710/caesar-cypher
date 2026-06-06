@@ -1,6 +1,6 @@
-==========================
-#Caesar-Encrypt
-==========================
+# ==========================
+# Caesar-Encrypt
+# ==========================
 
 def caesar_encrypt(text, shift):
     result = ""
@@ -14,16 +14,16 @@ def caesar_encrypt(text, shift):
 
     return result
 
-==========================
-#Caesar-Decrypt
-==========================
+# ==========================
+# Caesar-Decrypt
+# ==========================
 
 def caesar_decrypt(text, shift):
     return caesar_encrypt(text, -shift)
 
-==========================
-#Caesar-Brute-Force
-==========================
+# ==========================
+# Caesar-Brute-Force
+# ==========================
 
 def caesar_bruteforce(cipher):
     results = []
