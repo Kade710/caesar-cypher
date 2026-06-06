@@ -1,5 +1,5 @@
 # ==========================
-# Caesar-Encrypt
+# Caesar Encrypt
 # ==========================
 
 def caesar_encrypt(text, shift):
@@ -14,26 +14,28 @@ def caesar_encrypt(text, shift):
 
     return result
 
+
 # ==========================
-# Caesar-Decrypt
+# Caesar Decrypt
 # ==========================
 
 def caesar_decrypt(text, shift):
     return caesar_encrypt(text, -shift)
 
+
 # ==========================
-# Caesar-Brute-Force
+# Caesar Brute Force
 # ==========================
 
 def caesar_bruteforce(cipher):
     results = []
 
-    cipher = cypher.upper()
+    cipher = cipher.upper()
 
-    for shift in range (26):
+    for shift in range(26):
         result = ""
 
-        for c in cypher:
+        for c in cipher:
             if c.isalpha():
                 base = ord('A')
                 result += chr((ord(c) - base - shift) % 26 + base)
