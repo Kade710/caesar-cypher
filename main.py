@@ -17,12 +17,12 @@ def main():
             shift = int(input("Shift: "))
             print(caesar_encrypt(text, shift))
 
-        elif choice "2":
+        elif choice == "2":
             text = input("Text: ")
             shift = int(input("Shift: "))
             print(caesar_decrypt(text, shift))
 
-        elif choice "3":
+        elif choice == "3":
             text = input("Cyphertext: ")
             results = brute_force(text, shift)
 
