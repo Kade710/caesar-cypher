@@ -25,7 +25,7 @@ def main():
         elif choice == "3":
             text = input("Cyphertext: ")
 
-            results = brute_force(cipher)
+            results = caesar_bruteforce(cipher)
 
             for shift, text in results:
                 print(f"{shift}: {text}")
