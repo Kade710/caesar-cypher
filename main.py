@@ -1,5 +1,5 @@
-from caesar.py import caesar_encrypt, caesar_decrypt
-from rot13.py import rot13
+from caesar import caesar_encrypt, caesar_decrypt
+from rot13 import rot13
 
 def main():
     while True:
