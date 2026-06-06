@@ -23,7 +23,7 @@ def main():
             print(caesar_decrypt(text, shift))
 
         elif choice == "3":
-            text = input("Cyphertext: ")
+            text = input("Ciphertext: ")
 
             results = caesar_bruteforce(cipher)
 
